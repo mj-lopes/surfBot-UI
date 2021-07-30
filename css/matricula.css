@@ -1,0 +1,278 @@
+.titulo-interno {
+  padding: 15px calc((100% - 1260px) / 2);
+  text-align: center;
+  background: #EFF4F9;
+  color: #445566;
+}
+
+.matricula-container {
+  padding: 15px calc((100% - 1260px) / 2);
+  display: flex;
+}
+
+.form-matricula {
+  flex: 2;
+  margin: 15px;
+}
+
+.form-matricula form {
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-matricula label{
+  display: block;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+
+  font-family: "nunito", 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #445566;
+}
+
+.form-matricula input, select {
+  width: 100%;
+  padding: 10px;
+  background: #EFF4F9;
+  box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+  font-family: "nunito", 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: #445566;
+}
+
+.form-matricula .endereco {
+  display: flex;  
+  gap: 25px;
+}
+.form-matricula .endereco input {
+  width: 100%;
+}
+
+.form-matricula .endereco div:first-of-type {
+  flex: 2;
+}
+
+/* PAGAMENTO */
+
+.pagamento {
+  margin-top: 30px;
+  position: relative;
+}
+
+.pagamento::after {
+  content: "";
+  margin: 30px 0;
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #EFF4F9;
+}
+
+.pagamento span {
+  font-family: "nunito", 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  line-height: 25px;
+  font-weight: bold;  
+  color: #1188EE;
+}
+
+.pagamento span::after {
+  content: "";
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #EFF4F9;
+}
+
+.meiosPagamento, .meiosPagamento div{
+  display: flex;
+  max-width: 400px;
+  align-items: baseline;
+  box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+}
+
+.meiosPagamento input {
+  width: 12px;
+  height: 12px;
+  margin-right: 15px;
+  box-shadow: none;
+}
+
+.meiosPagamento label {
+  margin: 0;
+}
+
+
+.meiosPagamento div{
+  width: 100%;
+  padding: 15px;
+  background-color: #EFF4F9;
+}
+
+.meiosPagamento div:nth-child(1){
+  border-radius: 5px 0 0 5px;
+}
+
+.meiosPagamento div:nth-child(2){
+  border-radius: 0 5px 5px 0;
+}
+
+
+
+.cartao-info {
+  display: flex;
+  gap: 25px;
+}
+
+.cartao-info div {
+  flex: 1;
+}
+
+.cartao-info .cartao-validade {
+  display: flex;
+  gap: 30px;
+}
+
+.msg-pag {
+  margin-bottom: 15px;
+
+  font-size: 1.1rem;
+  line-height: 21px;
+  color: #445566;
+}
+
+.btn-form-matricula {
+  max-width: 260px;
+  padding: 12px 30px;
+
+  background-color: #1188EE;
+  border-radius: 5px;
+  border: none;
+
+  color: white;
+  font-family: "nunito", 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.sub-pg-form {
+  margin-top: 15px;
+
+  color: #445566;
+  font-family: "nunito", 'Courier New', Courier, monospace;
+  font-size: .875rem;
+}
+
+.sub-pg-form::before {
+  content: url(../img/cadeado.svg);
+  margin-right: 10px;
+}
+
+
+.plano-matricula {
+  flex: 1;
+  height: fit-content;
+  margin: 15px;
+  margin-top: 2rem;
+  padding: 30px;
+  background: #EFF4F9;
+  box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+  border-radius: 5px;
+}
+
+.plano-matricula p {
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #445566;
+}
+
+.plano-matricula form {
+  display: flex;  
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.plano-matricula form div {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: white;
+  padding: 14px;
+  box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+}
+
+.plano-matricula form div:nth-of-type(1) {
+  border-radius: 5px 0 0 5px;
+}
+
+.plano-matricula form div:nth-of-type(3) {
+  border-radius: 0px 5px 5px 0;
+}
+
+.plano-matricula form div label {
+  margin-left: 5px;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "nunito", 'Courier New', Courier, monospace;
+  color: #445566;
+}
+
+.item-plano {
+  margin: 0;
+}
+
+.item-plano p {
+  color: #1188EE;
+}
+
+
+.plano-matricula::after {
+  content: url('../img/bg-icones.svg');
+  position: absolute;
+  color: #445566;
+  margin-top: 70px;
+  margin-left: 70px;
+}
+
+
+@media (max-width: 871px){
+  .form-matricula div {
+    flex-direction: column;
+  }
+
+  .meiosPagamento div {
+    flex-direction: row;
+  }
+
+  .form-matricula .endereco {
+    gap: 0;
+  }
+
+  .cartao-info {
+    gap: 0;
+  }
+}
+
+@media (max-width: 671px) { 
+  .matricula-container {
+    flex-direction: column-reverse;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .plano-matricula form div {
+    padding: 2%;
+  }
+  .plano-matricula::after {
+    content: none;
+  }
+
+}

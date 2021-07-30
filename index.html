@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Surfbot-Flexbox</title>
+    
+  </head>
+
+  <body>
+    <div class="superinfo">
+      <p>Aulas na Praia Mansa de Sexta à Domingo das 06:00 às 14:00</p>
+    </div>
+    <header class="header-container">
+      <div class="logomarca">
+        <a href="/"><img src="img/surfbot-logo.svg" alt=""></a>
+      </div>
+      <nav>
+        <ul class="menu-nav">
+          <li><a href="#">Praia</a></li>
+          <li><a href="#">Aulas</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="matricula.html"><span>Matricule-se</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="intro">
+      <div class="intro-container">
+        <h1 class="intro-titulo">Escola de Surf</h1>
+        <form class="intro-form" action="#" method="post">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <button>Matricule-se</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="praia">
+      <div class="localizacao">
+        <img class="praia-localizacao" src="img/abigail-lynn-316133 (1).jpg" alt="praia surfbot" id="mapa">
+        <div class="mapa-container">
+          <img class="mapa-imagem" src="img/mapa.jpg" alt="mapa localização praia">    
+        </div>    
+
+        <div class="como-chegar">
+          <p>como chegar</p>
+          <ul>
+            <li><span>Carro</span> pela via Lúcio Costa sentido Barra</li>
+            <li><span>Ônibus</span> linhas 2333, 138, 189 e 170</li>
+            <li><span>Metrô</span> linha azul sentido Zona Sul </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="praia-desc">
+        <h1 class="titulo-principal">
+          <span>Aulas</span> em uma das melhores praias do <span>Rio</span>.
+        </h1>
+        <ul class="caracteristicas">
+          <li><img src="img/sandalhas.svg"> 8Km de costa</li>
+          <li><img src="img/coco.svg"> Restaurantes à beira mar</li>
+          <li><img src="img/boia.svg"> Salva-vidas a cada 300m</li>
+        </ul>
+        <p>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.</p>
+        <p>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.</p>
+      </div>
+    </section>
+
+    <section class="aulas">
+      <h1 class="titulo-aulas">Aulas</h1>
+      
+      <div class="planos-container">
+        <div class="item-plano">
+          <h2>infantil</h2>
+          <ul>
+            <li>Público entre 5 e 15 anos</li>
+            <li>Equipamentos fornecidos</li>
+            <li>Horários de Sex. à Sab.</li>
+            <li>2 horas seguidas de aula</li>
+          </ul>
+          <p>R$ 49,00 / Aula</p>
+          <a href="#" class="btn">Matricule-se</a>
+        </div>
+        
+        <div class="item-plano">
+          <h2>ADULTO</h2>
+          <ul>
+            <li>Público entre 16 e 80 anos</li>
+            <li>Equipamentos fornecidos</li>
+            <li>Horários de Sex. à Sab.</li>
+            <li>3 horas seguidas de aula</li>
+          </ul>
+          <p>R$ 69,00 / Aula</p>
+          <a href="#" class="btn">Matricule-se</a>
+        </div>
+
+        <div class="item-plano">
+          <h2>PROFISSIONAL</h2>
+          <ul>
+            <li>Experiência de 3 anos no surf</li>
+            <li>Você deve trazer o equipamento</li>
+            <li>Horários de Sex. à Sab.</li>
+            <li>4 horas seguidas de aula</li>
+          </ul>
+          <p>R$ 99,00 / Aula</p>
+          <a href="#" class="btn">Matricule-se</a>
+        </div>
+      </div>
+
+      <div class="call-to-action">
+        <p>
+          Possui um grupo com mais de <span>3 pessoas</span>? Entre <span>em contato</span> para um desconto personalizado.
+        </p>
+      </div>
+    </section>
+
+    <div class="quote-footer">
+      <blockquote>“O surf liberta as
+        ondas de uma vida.”
+      </blockquote>
+      <cite>Regis Pereira</cite>
+    </div>
+
+    <section class="contato">
+      <h1 class="titulo">Contato</h1>
+      <div class="contato-flex-container">
+        <form class="form-contato">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome">
+          <label for="email-contato">Email</label>
+          <input type="text" name="email-contato" id="email-contato">
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" rows="8"></textarea>
+          <button class="btn seta">Enviar Mensagem</button>
+        </form>
+
+        <div class="divide-class"></div>
+                                        
+        <ul class="contato-info">
+          <li>
+            <h2>Endereço</h2>
+            <p>Praia Mansa nº 47,<br>
+              Rio de Janeiro - RJ<br>
+              Procure a barraca vermelha
+            </p>
+            <a href="#mapa">VER NO MAPA</a>
+          </li>
+          
+          <li>
+            <h2>Email & Telefone</h2>
+            <span>contato@surfbot.com</span>
+            <span><a href="21 99999-9999">21 99999-9999</a></span>
+          </li>
+
+          <li>
+            <h2>Horário</h2>
+            <p>De sexta à Sábado<br>
+              Das 06:00 às 14:00
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Surfnet 2021 - Alguns direitos reseervados.</p>
+    </footer>
+  </body>
+</html>
