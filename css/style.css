@@ -42,6 +42,12 @@ img {
   background-color: #ff3726;
 }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
 /******************** HEADER ********************/
 
 .superinfo {
@@ -186,7 +192,7 @@ img {
   background-color: #445566;
 }
 
-@media screen and (max-width: 860px) and (min-width: 565px) {
+@media screen and (max-width: 840px) {
   .intro-form input {
     border-radius: 5px 5px 0 0;
   }
@@ -194,20 +200,14 @@ img {
     border-radius: 0 0 5px 5px;
   }
 }
-@media screen and (max-width: 564px) and (min-width: 441px) {
-  .intro-form button {
-    border-radius: 0 5px 5px 0;
+
+@media screen and (max-width: 600px) {
+  .intro-container {
+    margin-top: 0px;
+    flex-direction: column;
   }
-  .intro-form input {
-    border-radius: 5px 0 0 5px;
-  }
-}
-@media screen and (max-width: 440px) {
-  .intro-form input {
-    border-radius: 5px 5px 0 0;
-  }
-  .intro-form button {
-    border-radius: 0 0 5px 5px;
+  .intro-container * {
+    flex: 0;
   }
 }
 
@@ -235,7 +235,7 @@ img {
 
 .mapa-container {
   margin-top: -22%;
-  padding: 0 15px;
+  padding: 0 10%;
 }
 
 .mapa-imagem {
@@ -344,15 +344,54 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
   .praia {
     flex-direction: column-reverse;
     align-content: center;
     margin-left: 15px;
     margin-right: 15px;
   }
+
   .praia-desc {
+    max-width: none;
     margin-left: 0;
+  }
+
+  .titulo-principal {
+    max-width: none;
+    text-align: center;
+  }
+
+  .caracteristicas {
+    max-width: 80%;
+    margin: 30px auto;
+  }
+
+  .caracteristicas li {
+    padding-left: 15%;
+  }
+
+  .praia-desc p {
+    max-width: none;
+  }
+
+  .localizacao {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-principal {
+    font-size: 3rem;
+    line-height: 1.1em;
+  }
+  .caracteristicas li {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+  }
+  .caracteristicas li > img {
+    margin-right: 0;
   }
 }
 
@@ -389,8 +428,7 @@ img {
   height: 68px;
   display: inline-block;
   position: absolute;
-  text-align: center;
-  top: -32px;
+  top: -33px;
 }
 
 .planos-container {
@@ -534,6 +572,12 @@ img {
   border-bottom: 3px solid #ff3726;
 }
 
+@media screen and (max-width: 480px) {
+  .titulo-aulas::before {
+    margin-left: -20px;
+  }
+}
+
 /******************** FOOTER QUOTE ********************/
 
 .quote-footer {
@@ -567,6 +611,11 @@ img {
   font-style: normal;
 }
 
+@media screen and (max-width: 480px) {
+  .quote-footer blockquote {
+    font-size: 3em;
+  }
+}
 /******************** FORM CONTATO ********************/
 
 .contato {
