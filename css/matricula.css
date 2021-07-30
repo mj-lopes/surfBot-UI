@@ -1,7 +1,7 @@
 .titulo-interno {
   padding: 15px calc((100% - 1260px) / 2);
   text-align: center;
-  background: #EFF4F9;
+  background: #eff4f9;
   color: #445566;
 }
 
@@ -21,32 +21,33 @@
   flex-direction: column;
 }
 
-.form-matricula label{
+.form-matricula label {
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-top: 1rem;
 
-  font-family: "nunito", 'Courier New', Courier, monospace;
+  font-family: "nunito", "Courier New", Courier, monospace;
   font-weight: bold;
   color: #445566;
 }
 
-.form-matricula input, select {
+.form-matricula input,
+select {
   width: 100%;
   padding: 10px;
-  background: #EFF4F9;
+  background: #eff4f9;
   box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
   border-radius: 5px;
   border: none;
   outline: none;
 
-  font-family: "nunito", 'Courier New', Courier, monospace;
+  font-family: "nunito", "Courier New", Courier, monospace;
   font-size: 1rem;
   color: #445566;
 }
 
 .form-matricula .endereco {
-  display: flex;  
+  display: flex;
   gap: 25px;
 }
 .form-matricula .endereco input {
@@ -70,15 +71,15 @@
   width: 100%;
   height: 2px;
   display: block;
-  background-color: #EFF4F9;
+  background-color: #eff4f9;
 }
 
 .pagamento span {
-  font-family: "nunito", 'Courier New', Courier, monospace;
+  font-family: "nunito", "Courier New", Courier, monospace;
   font-size: 1.1rem;
   line-height: 25px;
-  font-weight: bold;  
-  color: #1188EE;
+  font-weight: bold;
+  color: #1188ee;
 }
 
 .pagamento span::after {
@@ -88,10 +89,11 @@
   width: 100%;
   height: 2px;
   display: block;
-  background-color: #EFF4F9;
+  background-color: #eff4f9;
 }
 
-.meiosPagamento, .meiosPagamento div{
+.meiosPagamento,
+.meiosPagamento div {
   display: flex;
   max-width: 400px;
   align-items: baseline;
@@ -109,22 +111,19 @@
   margin: 0;
 }
 
-
-.meiosPagamento div{
+.meiosPagamento div {
   width: 100%;
   padding: 15px;
-  background-color: #EFF4F9;
+  background-color: #eff4f9;
 }
 
-.meiosPagamento div:nth-child(1){
+.meiosPagamento div:nth-child(1) {
   border-radius: 5px 0 0 5px;
 }
 
-.meiosPagamento div:nth-child(2){
+.meiosPagamento div:nth-child(2) {
   border-radius: 0 5px 5px 0;
 }
-
-
 
 .cartao-info {
   display: flex;
@@ -152,12 +151,12 @@
   max-width: 260px;
   padding: 12px 30px;
 
-  background-color: #1188EE;
+  background-color: #1188ee;
   border-radius: 5px;
   border: none;
 
   color: white;
-  font-family: "nunito", 'Courier New', Courier, monospace;
+  font-family: "nunito", "Courier New", Courier, monospace;
   font-weight: bold;
 }
 
@@ -165,8 +164,8 @@
   margin-top: 15px;
 
   color: #445566;
-  font-family: "nunito", 'Courier New', Courier, monospace;
-  font-size: .875rem;
+  font-family: "nunito", "Courier New", Courier, monospace;
+  font-size: 0.875rem;
 }
 
 .sub-pg-form::before {
@@ -174,14 +173,13 @@
   margin-right: 10px;
 }
 
-
 .plano-matricula {
   flex: 1;
   height: fit-content;
   margin: 15px;
   margin-top: 2rem;
   padding: 30px;
-  background: #EFF4F9;
+  background: #eff4f9;
   box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
   border-radius: 5px;
 }
@@ -193,7 +191,7 @@
 }
 
 .plano-matricula form {
-  display: flex;  
+  display: flex;
   justify-content: center;
   flex-wrap: nowrap;
 }
@@ -220,7 +218,7 @@
 
   font-size: 1.1rem;
   font-weight: bold;
-  font-family: "nunito", 'Courier New', Courier, monospace;
+  font-family: "nunito", "Courier New", Courier, monospace;
   color: #445566;
 }
 
@@ -229,20 +227,18 @@
 }
 
 .item-plano p {
-  color: #1188EE;
+  color: #1188ee;
 }
 
-
 .plano-matricula::after {
-  content: url('../img/bg-icones.svg');
+  content: url("../img/bg-icones.svg");
   position: absolute;
   color: #445566;
   margin-top: 70px;
   margin-left: 70px;
 }
 
-
-@media (max-width: 871px){
+@media (max-width: 871px) {
   .form-matricula div {
     flex-direction: column;
   }
@@ -260,7 +256,7 @@
   }
 }
 
-@media (max-width: 671px) { 
+@media (max-width: 671px) {
   .matricula-container {
     flex-direction: column-reverse;
   }
@@ -274,5 +270,4 @@
   .plano-matricula::after {
     content: none;
   }
-
 }

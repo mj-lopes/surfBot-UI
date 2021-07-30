@@ -1,237 +1,259 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/grid.css">
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/matricula.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Surfbot-Flexbox - Matricule-se</title>
-</head>
-<body>
-  <header class="header-container">
-    <div class="logomarca">
-      <a href="/"><img src="img/surfbot-logo.svg" alt=""></a>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/matricula.css" />
+
+    <title>Surfbot-Flexbox - Matricule-se</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logomarca">
+        <a href="/"><img src="img/surfbot-logo.svg" alt="" /></a>
+      </div>
+      <nav>
+        <ul class="menu-nav">
+          <li><a href="#">Praia</a></li>
+          <li><a href="#">Aulas</a></li>
+          <li><a href="#">Contato</a></li>
+          <li>
+            <a href="matricula.html"><span>Matricule-se</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="titulo-interno">
+      <h1>Matricule-se</h1>
     </div>
-    <nav>
-      <ul class="menu-nav">
-        <li><a href="#">Praia</a></li>
-        <li><a href="#">Aulas</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="matricula.html"><span>Matricule-se</span></a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <div class="titulo-interno">
-    <h1>Matricule-se</h1>
-  </div>
-
-  <section class="matricula-container">
-    <div class="form-matricula">
-      <form>
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email">
-        <label for="cpf">CPF</label>
-        <input type="text" name="cpf" id="cpf">
-        <div class="endereco">
-          <div>
-            <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" id="endereco">
-          </div>
-          <div>
-            <label for="estado">Estado</label>
-            <select id="estado" name="estado">
-              <option value="AC">Acre</option>
-              <option value="AL">Alagoas</option>
-              <option value="AP">Amapá</option>
-              <option value="AM">Amazonas</option>
-              <option value="BA">Bahia</option>
-              <option value="CE">Ceará</option>
-              <option value="DF">Distrito Federal</option>
-              <option value="ES">Espírito Santo</option>
-              <option value="GO">Goiás</option>
-              <option value="MA">Maranhão</option>
-              <option value="MT">Mato Grosso</option>
-              <option value="MS">Mato Grosso do Sul</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="PA">Pará</option>
-              <option value="PB">Paraíba</option>
-              <option value="PR">Paraná</option>
-              <option value="PE">Pernambuco</option>
-              <option value="PI">Piauí</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="RN">Rio Grande do Norte</option>
-              <option value="RS">Rio Grande do Sul</option>
-              <option value="RO">Rondônia</option>
-              <option value="RR">Roraima</option>
-              <option value="SC">Santa Catarina</option>
-              <option value="SP">São Paulo</option>
-              <option value="SE">Sergipe</option>
-              <option value="TO">Tocantins</option>
-              <option value="EX">Estrangeiro</option>
-            </select>
-          </div>          
-        </div>
-
-        <div class="endereco">
-          <div>
-            <label for="cep">CEP</label>
-            <input type="number" name="cep" id="cep">
-          </div>
-          <div>
-            <label for="cidade">Cidade</label>
-            <select id="cidade" name="cidade">
-              <option value="AC">Acre</option>
-              <option value="AL">Alagoas</option>
-              <option value="AP">Amapá</option>
-              <option value="AM">Amazonas</option>
-              <option value="BA">Bahia</option>
-              <option value="CE">Ceará</option>
-              <option value="DF">Distrito Federal</option>
-              <option value="ES">Espírito Santo</option>
-              <option value="GO">Goiás</option>
-              <option value="MA">Maranhão</option>
-              <option value="MT">Mato Grosso</option>
-              <option value="MS">Mato Grosso do Sul</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="PA">Pará</option>
-              <option value="PB">Paraíba</option>
-              <option value="PR">Paraná</option>
-              <option value="PE">Pernambuco</option>
-              <option value="PI">Piauí</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="RN">Rio Grande do Norte</option>
-              <option value="RS">Rio Grande do Sul</option>
-              <option value="RO">Rondônia</option>
-              <option value="RR">Roraima</option>
-              <option value="SC">Santa Catarina</option>
-              <option value="SP">São Paulo</option>
-              <option value="SE">Sergipe</option>
-              <option value="TO">Tocantins</option>
-              <option value="EX">Estrangeiro</option>
-            </select>
-          </div>          
-        </div>
-
-        
-      <div class="pagamento">
-        <span>Forma de Pagamento</span>
-
-        <div class="meiosPagamento">
-          <div class="cartao">
-            <input type="radio" id="cartaoDeCredito" value="cartaoDeCredito" name="formaDePagamento">
-            <label for="cartaoDeCredito">Cartão de Credito</label>
-          </div>
-          <div class="boleto">
-            <input type="radio" id="BoletoBancario" value="BoletoBancario" name="formaDePagamento">
-            <label for="BoletoBancario">Boleto Bancário</label>
-          </div>
-        </div>        
-        
-        <div class="cartao-info">
-          <div>
-            <label for="nomeCartao">Nome no Cartão</label>
-            <input type="text" name="nomeCartao" id="nomeCartao">
-            <label for="numeroCartao">Número do Cartão</label>
-            <input type="text" name="numeroCartao" id="numeroCartao">            
-          </div>         
-          
-          <div>
-            <label for="dataExpiracao">Data de Expiração</label>
-            <div class="cartao-validade">
-              <select name="mes" id="mes">
-                <option value="Jan">Jan</option>
-                <option value="Fev">Fev</option>
-                <option value="Mar">Mar</option>
-                <option value="Abr">Abr</option>
-                <option value="Mai">Mai</option>
-                <option value="Jun">Jun</option>
-                <option value="Jul">Jul</option>
-                <option value="Ago">Ago</option>
-                <option value="Set">Set</option>
-                <option value="Out">Out</option>
-                <option value="Nov">Nov</option>
-                <option value="Dez">Dez</option>
-              </select>
-              <select name="ano" id="ano">
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-                <option value="2028">2028</option>
-                <option value="2029">2029</option>
-                <option value="2030">2030</option>
-                <option value="2031">2031</option>
-                <option value="2032">2032</option>
-                <option value="2033">2033</option>
+    <section class="matricula-container">
+      <div class="form-matricula">
+        <form>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" />
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" />
+          <label for="cpf">CPF</label>
+          <input type="text" name="cpf" id="cpf" />
+          <div class="endereco">
+            <div>
+              <label for="endereco">Endereço</label>
+              <input type="text" name="endereco" id="endereco" />
+            </div>
+            <div>
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
               </select>
             </div>
-            <label for="codigoSegurancao">Código de Segurança</label>
-            <input type="number" min="0"name="codigoSegurancao" id="codigoSegurancao" >
+          </div>
+
+          <div class="endereco">
+            <div>
+              <label for="cep">CEP</label>
+              <input type="number" name="cep" id="cep" />
+            </div>
+            <div>
+              <label for="cidade">Cidade</label>
+              <select id="cidade" name="cidade">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="pagamento">
+            <span>Forma de Pagamento</span>
+
+            <div class="meiosPagamento">
+              <div class="cartao">
+                <input
+                  type="radio"
+                  id="cartaoDeCredito"
+                  value="cartaoDeCredito"
+                  name="formaDePagamento"
+                />
+                <label for="cartaoDeCredito">Cartão de Credito</label>
+              </div>
+              <div class="boleto">
+                <input
+                  type="radio"
+                  id="BoletoBancario"
+                  value="BoletoBancario"
+                  name="formaDePagamento"
+                />
+                <label for="BoletoBancario">Boleto Bancário</label>
+              </div>
+            </div>
+
+            <div class="cartao-info">
+              <div>
+                <label for="nomeCartao">Nome no Cartão</label>
+                <input type="text" name="nomeCartao" id="nomeCartao" />
+                <label for="numeroCartao">Número do Cartão</label>
+                <input type="text" name="numeroCartao" id="numeroCartao" />
+              </div>
+
+              <div>
+                <label for="dataExpiracao">Data de Expiração</label>
+                <div class="cartao-validade">
+                  <select name="mes" id="mes">
+                    <option value="Jan">Jan</option>
+                    <option value="Fev">Fev</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Abr">Abr</option>
+                    <option value="Mai">Mai</option>
+                    <option value="Jun">Jun</option>
+                    <option value="Jul">Jul</option>
+                    <option value="Ago">Ago</option>
+                    <option value="Set">Set</option>
+                    <option value="Out">Out</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dez">Dez</option>
+                  </select>
+                  <select name="ano" id="ano">
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                  </select>
+                </div>
+                <label for="codigoSegurancao">Código de Segurança</label>
+                <input
+                  type="number"
+                  min="0"
+                  name="codigoSegurancao"
+                  id="codigoSegurancao"
+                />
+              </div>
+            </div>
+          </div>
+
+          <p class="msg-pag">Seu cartão será debitado em R$ 49,00</p>
+          <button class="btn-form-matricula">REALIZAR MATRÍCULA</button>
+          <p class="sub-pg-form">Informações seguras e criptografadas</p>
+        </form>
+      </div>
+
+      <div class="plano-matricula">
+        <p>Escolha o Plano</p>
+
+        <form>
+          <div>
+            <input type="radio" name="plano" id="infantil" />
+            <label for="infantil">infantil</label>
+          </div>
+
+          <div>
+            <input type="radio" name="plano" id="adulto" />
+            <label for="adulto">adulto</label>
+          </div>
+
+          <div>
+            <input type="radio" name="plano" id="profissional" />
+            <label for="profissional">profissional</label>
+          </div>
+        </form>
+
+        <div class="carrosel-planos">
+          <div class="planos-container">
+            <div class="item-plano">
+              <h2>PROFISSIONAL</h2>
+              <ul>
+                <li>Experiência de 3 anos no surf</li>
+                <li>Você deve trazer o equipamento</li>
+                <li>Horários de Sex. à Sab.</li>
+                <li>4 horas seguidas de aula</li>
+              </ul>
+              <p>R$ 99,00 / Aula</p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-        <p class="msg-pag">Seu cartão será debitado em R$ 49,00</p>
-        <button class="btn-form-matricula">REALIZAR MATRÍCULA</button>
-        <p class="sub-pg-form">Informações seguras e criptografadas</p>
-      </form>
-    </div>
-    
-    <div class="plano-matricula">
-      <p>Escolha o Plano</p>
-
-      <form>
-        <div>
-          <input type="radio" name="plano" id="infantil">
-          <label for="infantil">infantil</label>
-        </div>
-
-        <div>
-          <input type="radio" name="plano" id="adulto">
-          <label for="adulto">adulto</label>
-        </div>
-
-        <div>
-          <input type="radio" name="plano" id="profissional">
-          <label for="profissional">profissional</label>
-        </div>       
-      </form>
-      
-      <div class="carrosel-planos">
-        <div class="planos-container">
-          <div class="item-plano">
-            <h2>PROFISSIONAL</h2>
-            <ul>
-              <li>Experiência de 3 anos no surf</li>
-              <li>Você deve trazer o equipamento</li>
-              <li>Horários de Sex. à Sab.</li>
-              <li>4 horas seguidas de aula</li>
-            </ul>
-            <p>R$ 99,00 / Aula</p>
-          </div>
-        </div>
-      </div>      
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>Surfnet 2021 - Alguns direitos reseervados.</p>
-  </footer>
-</body>
+    <footer class="footer">
+      <p>Surfnet 2021 - Alguns direitos reseervados.</p>
+    </footer>
+  </body>
 </html>
