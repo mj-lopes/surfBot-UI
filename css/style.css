@@ -755,7 +755,7 @@ img {
   font-weight: bold;
 }
 
-.contato-info li:last-of-type h2::before {
+.funcionamento::before {
   content: "";
   display: inline-block;
   height: 8px;
@@ -764,8 +764,12 @@ img {
   margin-right: 5px;
   margin-bottom: 1.5px;
 
-  border: 2px solid #16c70b;
+  border: 2px solid #ee2211;
   border-radius: 50%;
+}
+
+.funcionamento.aberto::before {
+  border: 2px solid #16c70b;
 }
 
 .contato-info p,
