@@ -28,6 +28,8 @@ export default class Funcionamento {
   }
 
   init() {
-    this.estaAberto();
+    if (this.dias && this.horario && this.elemento) {
+      this.estaAberto();
+    }
   }
 }
