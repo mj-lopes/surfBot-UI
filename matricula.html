@@ -25,7 +25,7 @@
   <body>
     <header class="header-container">
       <div class="logomarca">
-        <a href="/index.html"><img src="img/surfbot-logo.svg" alt="" /></a>
+        <a href="index.html"><img src="img/surfbot-logo.svg" alt="" /></a>
       </div>
       <nav>
         <ul class="menu-nav">
@@ -45,17 +45,17 @@
 
     <section class="matricula-container">
       <div class="form-matricula">
-        <form action="matricula.html" method="GET" id="formulario-vendas">
+        <form action="#" method="GET" id="formulario-vendas">
           <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" />
+          <input type="text" name="nome" id="nome" required />
           <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
           <label for="cpf">CPF</label>
-          <input type="text" name="cpf" id="cpf" />
+          <input type="text" name="cpf" id="cpf" required />
           <div class="endereco">
             <div>
               <label for="endereco">Endereço</label>
-              <input type="text" name="endereco" id="endereco" />
+              <input type="text" name="endereco" id="endereco" required />
             </div>
             <div>
               <label for="estado">Estado</label>
@@ -95,7 +95,7 @@
           <div class="endereco">
             <div>
               <label for="cep">CEP</label>
-              <input type="number" name="cep" id="cep" />
+              <input type="number" name="cep" id="cep" required />
             </div>
             <div>
               <label for="cidade">Cidade</label>
@@ -142,6 +142,7 @@
                   id="cartaoDeCredito"
                   value="cartaoDeCredito"
                   name="formaDePagamento"
+                  required
                 />
                 <label for="cartaoDeCredito">Cartão de Credito</label>
               </div>
@@ -151,6 +152,7 @@
                   id="BoletoBancario"
                   value="BoletoBancario"
                   name="formaDePagamento"
+                  required
                 />
                 <label for="BoletoBancario">Boleto Bancário</label>
               </div>
@@ -159,9 +161,14 @@
             <div class="cartao-info">
               <div>
                 <label for="nomeCartao">Nome no Cartão</label>
-                <input type="text" name="nomeCartao" id="nomeCartao" />
+                <input type="text" name="nomeCartao" id="nomeCartao" required />
                 <label for="numeroCartao">Número do Cartão</label>
-                <input type="text" name="numeroCartao" id="numeroCartao" />
+                <input
+                  type="text"
+                  name="numeroCartao"
+                  id="numeroCartao"
+                  required
+                />
               </div>
 
               <div>
@@ -208,8 +215,13 @@
             </div>
           </div>
 
-          <p class="msg-pag">Seu cartão será debitado em R$ 49,00</p>
-          <button class="btn-form-matricula">REALIZAR MATRÍCULA</button>
+          <p class="msg-pag">
+            Seu cartão será debitado em R$
+            <span class="valor-plano">49,00</span>
+          </p>
+          <button type="submit" class="btn-form-matricula">
+            REALIZAR MATRÍCULA
+          </button>
           <p class="sub-pg-form">Informações seguras e criptografadas</p>
         </form>
       </div>
@@ -244,8 +256,7 @@
                 <li>Horários de Sex. à Sab.</li>
                 <li>2 horas seguidas de aula</li>
               </ul>
-              <p>R$ 49,00 / Aula</p>
-              <a href="matricula.html" class="btn">Matricule-se</a>
+              <p class="valor-plano">R$ 49,00 / Aula</p>
             </div>
 
             <div class="item-plano">
@@ -256,8 +267,7 @@
                 <li>Horários de Sex. à Sab.</li>
                 <li>3 horas seguidas de aula</li>
               </ul>
-              <p>R$ 69,00 / Aula</p>
-              <a href="matricula.html" class="btn">Matricule-se</a>
+              <p class="valor-plano">R$ 69,00 / Aula</p>
             </div>
 
             <div class="item-plano">
@@ -268,8 +278,7 @@
                 <li>Horários de Sex. à Sab.</li>
                 <li>4 horas seguidas de aula</li>
               </ul>
-              <p>R$ 99,00 / Aula</p>
-              <a href="matricula.html" class="btn">Matricule-se</a>
+              <p class="valor-plano">R$ 99,00 / Aula</p>
             </div>
           </div>
         </div>
