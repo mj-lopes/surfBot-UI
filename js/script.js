@@ -23,9 +23,10 @@ const funcionamento = new Funcionamento(
 
 funcionamento.init();
 
-const animacaoFormulario = new AnimaRadio(
+const animaPlano = new AnimaRadio(
   'form[id="form-tipo-plano"]',
   "plano",
   ".item-plano",
+  ".plano-valor",
 );
-animacaoFormulario.init();
+animaPlano.init();
