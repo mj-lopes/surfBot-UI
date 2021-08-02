@@ -173,6 +173,8 @@ select {
   margin-right: 10px;
 }
 
+/* ESTILOS DOS PLANOS PARA A MATRICULA */
+
 .plano-matricula {
   flex: 1;
   height: fit-content;
@@ -224,6 +226,21 @@ select {
 
 .item-plano {
   margin: 0;
+  display: none;
+}
+
+.item-plano.ativo {
+  display: block;
+  animation: showUp 0.8s forwards;
+}
+
+@keyframes showUp {
+  from {
+    transform: translate3d(30px, 30px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .item-plano p {
