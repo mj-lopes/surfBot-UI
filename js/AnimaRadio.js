@@ -31,8 +31,6 @@ export default class AnimaRadio {
     camposRadio[posicaoElemento].checked = "true";
 
     this.planoAtivo = this.planos[posicaoElemento];
-
-    this.alterarValor();
   }
 
   init() {
