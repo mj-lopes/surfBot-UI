@@ -2,6 +2,7 @@ import ScrollSuave from "./scrollSuave";
 import HandleInputForm from "./handleForm";
 import Funcionamento from "./funcionamento";
 import AnimaRadio from "./AnimaRadio";
+import AlteraValor from "./alteraValor";
 
 const scrollSection = new ScrollSuave('.menu-nav a[href^="#"]');
 scrollSection.init();
@@ -27,6 +28,13 @@ const animaPlano = new AnimaRadio(
   'form[id="form-tipo-plano"]',
   "plano",
   ".item-plano",
-  ".plano-valor",
 );
 animaPlano.init();
+
+const valorVenda = new AlteraValor(
+  ".item-plano",
+  ".item-plano.ativo",
+  ".valor-plano",
+  ".valor-matricula",
+);
+valorVenda.init();
