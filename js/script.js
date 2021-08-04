@@ -3,6 +3,8 @@ import HandleInputForm from "./handleForm";
 import Funcionamento from "./funcionamento";
 import AnimaRadio from "./AnimaRadio";
 import AlteraValor from "./alteraValor";
+import FetchCep from "./fetchCep";
+import ExibirFormCartao from "./exibirFormCartao";
 
 const scrollSection = new ScrollSuave('.menu-nav a[href^="#"]');
 scrollSection.init();
@@ -38,3 +40,12 @@ const valorVenda = new AlteraValor(
   ".valor-matricula",
 );
 valorVenda.init();
+
+const cepInfo = new FetchCep("formulario-vendas");
+cepInfo.init();
+
+const cartao = new ExibirFormCartao(
+  ".cartao-container",
+  ".meiosPagamento .cartao input",
+  ".meiosPagamento > div",
+);
