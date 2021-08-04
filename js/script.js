@@ -4,7 +4,7 @@ import Funcionamento from "./funcionamento";
 import AnimaRadio from "./AnimaRadio";
 import AlteraValor from "./alteraValor";
 import FetchCep from "./fetchCep";
-import ExibirFormCartao from "./exibirFormCartao";
+import ExibirContent from "./exibirContent";
 
 const scrollSection = new ScrollSuave('.menu-nav a[href^="#"]');
 scrollSection.init();
@@ -44,8 +44,10 @@ valorVenda.init();
 const cepInfo = new FetchCep("formulario-vendas");
 cepInfo.init();
 
-const cartao = new ExibirFormCartao(
+const cartao = new ExibirContent(
   ".cartao-container",
   ".meiosPagamento .cartao input",
   ".meiosPagamento > div",
 );
+
+cartao.init();
