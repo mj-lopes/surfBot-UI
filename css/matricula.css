@@ -293,3 +293,32 @@ select {
     content: none;
   }
 }
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.cartao-container {
+  display: none;
+}
+
+.cartao-container.ativo {
+  display: block;
+  animation: showDown 0.3s forwards;
+}
+
+@keyframes showDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

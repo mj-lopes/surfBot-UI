@@ -54,8 +54,15 @@
           <input type="text" name="cpf" id="cpf" required />
           <div class="endereco">
             <div>
-              <label for="endereco">Endereço</label>
-              <input type="text" name="endereco" id="endereco" required />
+              <label for="cep">CEP</label>
+              <input
+                type="number"
+                name="cep"
+                id="cep"
+                placeholder="Somente números"
+                min="0"
+                required
+              />
             </div>
             <div>
               <label for="estado">Estado</label>
@@ -94,41 +101,12 @@
 
           <div class="endereco">
             <div>
-              <label for="cep">CEP</label>
-              <input type="number" name="cep" id="cep" required />
+              <label for="endereco">Endereço</label>
+              <input type="text" name="endereco" id="endereco" required />
             </div>
             <div>
               <label for="cidade">Cidade</label>
-              <select id="cidade" name="cidade">
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-                <option value="EX">Estrangeiro</option>
-              </select>
+              <input type="text" id="cidade" name="cidade" />
             </div>
           </div>
 
@@ -158,59 +136,66 @@
               </div>
             </div>
 
-            <div class="cartao-info">
-              <div>
-                <label for="nomeCartao">Nome no Cartão</label>
-                <input type="text" name="nomeCartao" id="nomeCartao" required />
-                <label for="numeroCartao">Número do Cartão</label>
-                <input
-                  type="text"
-                  name="numeroCartao"
-                  id="numeroCartao"
-                  required
-                />
-              </div>
-
-              <div>
-                <label for="dataExpiracao">Data de Expiração</label>
-                <div class="cartao-validade">
-                  <select name="mes" id="mes">
-                    <option value="Jan">Jan</option>
-                    <option value="Fev">Fev</option>
-                    <option value="Mar">Mar</option>
-                    <option value="Abr">Abr</option>
-                    <option value="Mai">Mai</option>
-                    <option value="Jun">Jun</option>
-                    <option value="Jul">Jul</option>
-                    <option value="Ago">Ago</option>
-                    <option value="Set">Set</option>
-                    <option value="Out">Out</option>
-                    <option value="Nov">Nov</option>
-                    <option value="Dez">Dez</option>
-                  </select>
-                  <select name="ano" id="ano">
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                    <option value="2027">2027</option>
-                    <option value="2028">2028</option>
-                    <option value="2029">2029</option>
-                    <option value="2030">2030</option>
-                    <option value="2031">2031</option>
-                    <option value="2032">2032</option>
-                    <option value="2033">2033</option>
-                  </select>
+            <div class="cartao-container">
+              <div class="cartao-info">
+                <div>
+                  <label for="nomeCartao">Nome no Cartão</label>
+                  <input
+                    type="text"
+                    name="nomeCartao"
+                    id="nomeCartao"
+                    required
+                  />
+                  <label for="numeroCartao">Número do Cartão</label>
+                  <input
+                    type="text"
+                    name="numeroCartao"
+                    id="numeroCartao"
+                    required
+                  />
                 </div>
-                <label for="codigoSegurancao">Código de Segurança</label>
-                <input
-                  type="number"
-                  min="0"
-                  name="codigoSegurancao"
-                  id="codigoSegurancao"
-                />
+
+                <div>
+                  <label for="dataExpiracao">Data de Expiração</label>
+                  <div class="cartao-validade">
+                    <select name="mes" id="mes">
+                      <option value="Jan">Jan</option>
+                      <option value="Fev">Fev</option>
+                      <option value="Mar">Mar</option>
+                      <option value="Abr">Abr</option>
+                      <option value="Mai">Mai</option>
+                      <option value="Jun">Jun</option>
+                      <option value="Jul">Jul</option>
+                      <option value="Ago">Ago</option>
+                      <option value="Set">Set</option>
+                      <option value="Out">Out</option>
+                      <option value="Nov">Nov</option>
+                      <option value="Dez">Dez</option>
+                    </select>
+                    <select name="ano" id="ano">
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option>
+                      <option value="2031">2031</option>
+                      <option value="2032">2032</option>
+                      <option value="2033">2033</option>
+                    </select>
+                  </div>
+                  <label for="codigoSegurancao">Código de Segurança</label>
+                  <input
+                    type="password"
+                    min="0"
+                    name="codigoSegurancao"
+                    id="codigoSegurancao"
+                  />
+                </div>
               </div>
             </div>
           </div>
