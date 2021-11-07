@@ -4,7 +4,8 @@ Surfbot é um site de uma escola de surf da região do RJ. Criado focado em UI/U
 </p>
 
 <p align="center">
- <a href="#instalacao">Instalação</a> •
+ <a href="#requisitos">Requisitos</a> •
+ <a href="#instalacao">Instalação</a> • 
  <a href="#tecnologias">Tecnologias</a> •   
  <a href="#autor">Autor</a> •
  <a href="#licenca">Licença</a> 
@@ -15,14 +16,28 @@ Surfbot é um site de uma escola de surf da região do RJ. Criado focado em UI/U
 <p> Concluido 🌟</p>
 
 ![Dispositives sizes](https://user-images.githubusercontent.com/56007721/140631294-c3753ddd-9644-4690-9c3e-7ff20c1d151a.png)
-<h3> <a href='https://mj-lopes.github.io/surfBot-UI/'>Faça um Teste Online</3>
+ <h3> <a href='https://mj-lopes.github.io/surfBot-UI/'>Faça um Teste Online</a></h3>
 
 </div>
+ 
+ 
+<h2 id='requisitos'> Requisitos ⚙</h2>
+*Caso queira trabalhar com o código</br>
+
+Você vai precisar ter instalado em sua máquina a seguinte: [Git](https://git-scm.com).
+
+Além disto é bom ter um editor de texto para trabalhar com o código, recomendo o [VSCode](https://code.visualstudio.com/).
 
 <h2 id='instalacao'> instalação e Utilização ⚙</h2>
 
-<p>Clone este reposítorio usando o gitbash ou baixando o arquivo .zip no botão verde "Code" acima, rode o site em um server local ou diretamente abrindo o arquivo index.html.  Easy peasy...</p>
-
+<p># Clone este reposítorio usando o gitbash, cmd ou terminal de preferência:  
+ 
+ ``` $ git clone https://github.com/mj-lopes/surfBot-UI.git ``` 
+ 
+ *Necessita do git instalado  
+</br>Ou baixando o arquivo .zip no botão verde "Code" acima. <br/> </p>
+ <p># Rode o site em um server local ou diretamente abrindo o arquivo index.html.  <br/>
+ Easy peasy...</p>
 
 <h2 id='tecnologias'> Tecnologias 🛠 </h2>
 
