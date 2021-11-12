@@ -7,8 +7,7 @@ Surfbot é um site de uma escola de surf da região do RJ. Criado focado em UI/U
  <a href="#requisitos">Requisitos</a> •
  <a href="#instalacao">Instalação</a> • 
  <a href="#tecnologias">Tecnologias</a> •   
- <a href="#autor">Autor</a> •
- <a href="#licenca">Licença</a> 
+ <a href="#autor">Autor</a> 
 </p>
 
 <div align='center'>
